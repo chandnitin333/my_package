@@ -37,18 +37,17 @@ const mysqlConnection = (mysql) => {
   };
   
   
-  const msSQLConnection = async (mssql) => {
+  const msSQLConnection = async (sql) => {
       const config = {
           user: process.env.MSSQL_USER,
           password: process.env.MSSQL_PASSWORD,
           server: process.env.MSSQL_SERVER,
           database: process.env.MSSQL_DATABASE,
           options: {
-            encrypt: true, 
+            encrypt: false, 
             enableArithAbort: true // Helps with preventing SQL injection
           }
         };
-  
         const poolPromise = new sql.ConnectionPool(config)
           .connect()
           .then(pool => {
@@ -66,9 +65,9 @@ const mysqlConnection = (mysql) => {
   
   
   
-  const DBConn = async (connName='mongo') => {
-      const conn =null;
-      switch (connName = '') {
+   const DBConn = async (connName='mongo') => {
+      let conn =null;
+      switch (connName) {
           case 'mongo':
               const { MongoClient } = require('mongodb');
               conn = await mongoConnection(MongoClient);
@@ -80,6 +79,7 @@ const mysqlConnection = (mysql) => {
               conn = await mysqlConnection(mysql);
               break;
           case 'mssql':
+           
               const mssql = require('mssql');
               conn = await msSQLConnection(mssql);
               break;
@@ -93,11 +93,11 @@ const mysqlConnection = (mysql) => {
               break;
       }
   
-  
+      return conn;
   
   }
   
+ 
   module.exports = {
-   DBConn
-  };
-  
+    DBConn
+   };
