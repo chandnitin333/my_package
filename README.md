@@ -146,6 +146,23 @@ Remember that JavaScript only hoists declarations, not initialisation. Let's tak
 
 ## Differace between deep copy and shallo capy in java script.
 
+
+const person = {
+    name:"John",
+    greet:function () {
+        console.log("Name",this.name)
+    },
+    show:()=>{
+        console.log("Name",this.name)
+    }
+    
+}
+
+person.greet();
+person.show();
+
+
+
 # MongoDB
 What are indexes in MongoDB?
 
