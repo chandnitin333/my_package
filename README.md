@@ -1,6 +1,12 @@
+## how much exprience in node js 
+
+
+## what is differance between async await and promises
+## what are the generator functions in javascript
+##  what are the prototype chaning 
+## Remove dublicate value in array
 
 ## What is a higher order function
-
 A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 There are several different types of higher order functions like map and reduce. We will discuss these later in this tutorial. But before that let's first dive deep into what higher order functions are.
 
@@ -15,6 +21,8 @@ function higherOrderFunction(func){
     func()
 }
 
+## what is the difference between  filter and map &  reduce function in javascript 
+
 
 
 ## What is the Temporal Dead Zone
@@ -28,12 +36,8 @@ function somemethod() {
 }
 
 
-# MongoDB
-What are indexes in MongoDB?
 
-Addvantages of MongoDb
 
-Differance between relation and Non relation DB 
 
 
 
@@ -111,6 +115,35 @@ Remember that JavaScript only hoists declarations, not initialisation. Let's tak
 
 #Node Js
 
+## What is authorization and authentication 
+
+## what is middleware   use any  milddlware function in  your  application 
+
+## for secure api How to secure the Api's
+
+## What is JWT token 
+
+## What is rest API
+
+## Create Server run on 3000 port use express
+
+## Difference between package.json and package-lock.json files
+
+## any database like mysql and mongoDB  how to connect database.
+
+## difference between var let and const
+
+
+# MongoDB
+What are indexes in MongoDB?
+
+Addvantages of MongoDb
+
+
+Differance between relation and Non relation DB 
+
+
+
 
 ## What do you mean by Asynchronous API? ☆☆
 Answer: All APIs of Node.js library are aynchronous that is non-blocking. It essentially means a Node.js based server never waits for a API to return data. 
@@ -136,7 +169,7 @@ myEmitter.on('event', () => {
 });
 myEmitter.emit('event');
 
-#What are streams? ☆☆☆
+## What are streams? ☆☆☆
 Answer: Streams are objects that let you read data from a source or write data to a destination in continuous fashion. In Node.js, there are four types of streams.
 
 Readable - Stream which is used for read operation.
@@ -323,6 +356,7 @@ for(let key  in occrObj){
 # AWS 
 
 
+## What is AWS 
 ## Can you explain the execution process of a Lambda function?
 A15: The execution process of a Lambda function involves the following steps:
 * Trigger: First, an event source triggers the Lambda function. This could be a manual invocation, an AWS service like S3 or DynamoDB, or an API call via AWS API Gateway.
