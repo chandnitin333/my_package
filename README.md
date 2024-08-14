@@ -6,6 +6,8 @@
 ##  what are the prototype chaning 
 ## Remove dublicate value in array
 
+## what are the  main concept of async and await.
+
 ## What is a higher order function
 A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 There are several different types of higher order functions like map and reduce. We will discuss these later in this tutorial. But before that let's first dive deep into what higher order functions are.
@@ -133,6 +135,16 @@ Remember that JavaScript only hoists declarations, not initialisation. Let's tak
 
 ## difference between var let and const
 
+## Differece between GET and POST , PUT and PATCH
+
+## do you know  http status code 
+## When to use  200, 202 204 vs 502?
+
+## What are differance between call, bind and appy ?
+
+## what is spread operator in javascript and differance between spread and rest operator
+
+## Differace between deep copy and shallo capy in java script.
 
 # MongoDB
 What are indexes in MongoDB?
