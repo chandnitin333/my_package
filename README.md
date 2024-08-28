@@ -1,4 +1,4 @@
-## how much exprience in node js 
+![image](https://github.com/user-attachments/assets/77a2e9f1-b2e2-4432-a69c-b0626011d7af)## how much exprience in node js 
 
 
 ## what is differance between async await and promises
@@ -145,7 +145,29 @@ Remember that JavaScript only hoists declarations, not initialisation. Let's tak
 ## what is spread operator in javascript and differance between spread and rest operator
 
 ## Differace between deep copy and shallo capy in java script.
+## Tell me list of ES6 feature ?
 
+## what is TYPESCRIPT and benifit of typescript 
+
+## why use typescript in node project 
+
+## What is the difference between TypeScript and a statically typed language?
+    TypeScript is optionally statically typed, which means you can tell the compiler to ignore a variable's type. We can assign any type of value to the variable using any data type. During compilation, TypeScript will not perform any error checking.
+
+## How do the extensions .ts and .tsx differ in TypeScript?
+
+ts TypeScript                                    tsx TypeScript
+
+It is used for pure TypeScript files                It is used for JSX files
+
+This file is used when you have to create classes,  This file is used when you have to use JSX syntax and elements and create a React component.
+functions, reducers, etc., 
+that don't require the use of JSX syntax and elements.
+
+## Explain Decorators in TypeScript.
+
+    Decorators in TypeScript are a special kind of declarative syntax used to add metadata or modify the behavior of classes, methods, properties, or parameters. They provide a convenient way to apply reusable logic or behavior across multiple parts of your code without having to manually modify each target element. Decorators are built using higher-order functions, which receive the target element (such as a class or property) as an argument and return a modified version of it or perform specific actions on it.
+    
 
 const person = {
     name:"John",
