@@ -154,6 +154,22 @@ Remember that JavaScript only hoists declarations, not initialisation. Let's tak
 ## What is the difference between TypeScript and a statically typed language?
     TypeScript is optionally statically typed, which means you can tell the compiler to ignore a variable's type. We can assign any type of value to the variable using any data type. During compilation, TypeScript will not perform any error checking.
 
+
+## How to secure youR NODE  application in node js
+
+    
+    To secure your API application in Node.js, follow these best practices:
+    
+    Use HTTPS: Ensure all communications between the client and server are encrypted by using HTTPS.
+    Implement Authentication and Authorization: Use robust authentication mechanisms such as OAuth, JWT (JSON Web Tokens), or API keys, and implement role-based access control (RBAC) to manage permissions.
+    Input Validation and Sanitization: Validate and sanitize user input to prevent injection attacks such as SQL injection, XSS (Cross-Site Scripting), and command injection.
+    Use Rate Limiting: Implement rate limiting to prevent abuse or denial of service (DoS) attacks by limiting the number of requests a user can make within a certain period.
+    Enable CORS (Cross-Origin Resource Sharing): Configure CORS to restrict which domains can access your API.
+    Use Helmet for Security Headers: Utilize the helmet middleware to set various HTTP headers that protect against common vulnerabilities like clickjacking and XSS.
+    Protect Against Brute Force Attacks: Implement account lockouts, CAPTCHAs, or IP blocking to prevent brute-force attacks on authentication endpoints.
+    Keep Dependencies Updated: Regularly update your Node.js modules and dependencies to patch known vulnerabilities.
+    Avoid Exposing Sensitive Information: Ensure that sensitive data like API keys, tokens, and passwords are stored securely, never logged, and not exposed in error messages or stack traces.
+    Use Environment Variables: Store sensitive configuration data such as database credentials and API keys in environment variables instead of hardcoding them into the application
 ## How do the extensions .ts and .tsx differ in TypeScript?
 
 ts TypeScript                                    tsx TypeScript
@@ -651,11 +667,63 @@ Classic Load Balancers are used to route TCP (or Layer 4) traffic
 
 
 
+## Find two nuber sum of target number
+
+
+let arr = [1, 2, 9, 3, 5, 17];
+let target = 26; //like  [2,5]  8=  [ 3, 4 ]
+
+let result = findTwoNumbers(arr, target);
+
+if (result) {
+  console.log("Output is", result);
+} else {
+  console.log("No such pair found.");
+}
+function findTwoNumbers(arr, target) {
+  const numIndices = new Map();
+
+  for (let i = 0; i < arr.length; i++) {
+    const complement = target - arr[i];
+
+    if (numIndices.has(complement)) {
+      return [numIndices.get(complement), i];
+    }
+
+    numIndices.set(arr[i], i);
+  }
+
+  return null; // If no such pair is found
+}
 
 
 
 
+console.log(1)
 
+
+setTimeout(() => console.log(2), 0)
+
+Promise.resolve().then(() => console.log(3))
+
+Promise.resolve().then(() => setTimeout(() => console.log(4), 0))
+
+Promise.resolve().then(() => console.log(5))
+
+setTimeout(() => console.log(6), 0)
+
+console.log(7)
+
+
+
+op//
+1
+7
+3
+5
+2
+6
+4
 
 
 
